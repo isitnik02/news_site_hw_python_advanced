@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+{% load bootstrap5 %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="{% static 'main/css/style.css' %}"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
+    <!-- Site title -->
+    <title>Главная страница</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-3" style="background-color:black">
+              <div class="row">
+                  <img src="/img/icons/news_icon.png" alt="icon" style="width:auto; height:50px;">
+              <div class="row">
+                  <h1 style="color: white">Меню сайта</h1>
+              </div>
+              <div class="row">
+                      <!-- Ссылки бокового меню -->
+                  <ul class="nav flex-column">
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact/">Контакты</a><br>
+                     </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="content/">Список новостей</a><br>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="user_profile/">Страница пользователя</a><br>
+                  </li>
+                  </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-9">
+              <h1>Страница пользователя</h1>
+              <hr>
+              <img src="#" alt="user_photo" style="width:50px; height:50px;">
+              <p>Имя: </p><p>...</p>
+              <p>Фамилия: </p><p>...</p>
+              <hr>
+              <h3>История просмотров:</h3>
+              <p>Новость 1</p>
+              <p>Новость 2</p>
+              <p>Новость 3</p>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
